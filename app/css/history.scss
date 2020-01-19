@@ -1,0 +1,42 @@
+.history-block {
+    padding: 0 50px 60px;
+}
+
+.italic-title {
+    text-align: center;
+    border: medium none;
+    margin: 0 auto 30px;
+    padding: 0px 0px 10px;
+    color:black;
+    font: 600 50px/52px 'Dancing Script', cursive;
+    text-transform: capitalize !important;
+    letter-spacing: 0.2px;
+
+    @include tablets {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+.history-block__description {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color:#808080;
+
+    &--top {
+        padding: 10px 16% 30px;
+        @include tablets {
+            padding: 0;
+        }
+    }
+
+    &--bottom {
+        padding: 0 20px 10px;
+        @include tablets {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.partners {
+    padding: 30px 0 60px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    &:hover {
+        .partners__slider-btn {
+            opacity: 1;
+        }
+    }
+}
+
+.partners__list {
+    width: 85%;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.partners__item {
+    width: 15%;
+}
+
+.partners-block {
+    margin-right: 20px;
+    opacity: 0.7;
+
+    @include phones {
+        margin-right: 0;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.partners__img {
+    width: 100%;
+}
+
+.partners__slider-btn {
+    opacity: 0;
+    z-index: 20;
+    top: 30%;
+
+    &--left {
+        left: 0;
+    }
+
+    &--right {
+        right: 0;
+    }
+
+}
