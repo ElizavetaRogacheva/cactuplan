@@ -11,6 +11,9 @@
     display: flex;
     justify-content: center;
 
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .breadcrumbs__list {
@@ -30,7 +33,6 @@
             position: absolute;
             top: 0;
             right: -15px;
-
         }
     }
 }
@@ -48,6 +50,11 @@
     width: 25%;
     padding: 15px;
     box-sizing: border-box;
+
+    @include tablets {
+        order: 2;
+        width: 100%;
+    }
 }
 
 .categories {
@@ -62,10 +69,34 @@
     font: 600 14px/18px;
     letter-spacing: 1px;
     font-weight: 600;
+
+    @include tablets {
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            color: #000000;
+            content: "\f107";
+            font-family: "FontAwesome";
+            font-size: 22px;
+            font-weight: 400;
+            height: 20px;
+            margin: 0;
+            position: absolute;
+            right: 20px;
+            text-align: center;
+            top: 10px;
+            width: 20px;
+        }
+    }
 }
 
 .categories__list {
     padding: 0 15px 15px;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .categories__item {
@@ -110,6 +141,10 @@
 
 .filter__list {
     padding: 0 15px;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .filter__item {
@@ -167,7 +202,11 @@
 }
 
 .advertising {
-    margin-bottom: 15px;    
+    margin-bottom: 15px;   
+    
+    @include tablets {
+        display: none;
+    }
 }
 
 .advertising-block__link {
@@ -185,7 +224,11 @@
 }
 
 .latest-products__list {
-    padding: 0 15px 15px ;
+    padding: 0 15px 15px;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .latest-product-card {
@@ -235,6 +278,11 @@
 .products-category-content {
     width: 75%;
     background-color: $bg-gray;
+
+    @include tablets {
+        order: 1;
+        width: 100%;
+    }
 }
 
 .products-category-content__title {
@@ -303,11 +351,19 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .filterboard__left {
     display: flex;
     align-items: center;
+
+    @include tablets {
+        margin-bottom: 20px;
+    }
 }
 
 .show-grid {
@@ -396,6 +452,10 @@
     margin: 15px;
     box-sizing: border-box;
 
+    @include tablets {
+        max-width: 45%;
+    }
+
     &:hover {
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
         transition: all 0.4s ease-in-out;
@@ -456,5 +516,15 @@
 
     .footer-newsletter__input {
         background-color: #f4f4f4;
+    }
+}
+
+.visible {
+    display: block;
+}
+
+.rotate {
+    &::before {
+        transform: rotate(180deg);
     }
 }

@@ -20,6 +20,22 @@ $('#info').click(() => {
     $('#info').toggleClass('rotate');
 })
 
+$('.categories__title').click(() => {
+    $('.categories__list').toggleClass('visible');
+    $('.categories__title').toggleClass('rotate');
+})
+
+$('.filter-title').click(() => {
+    $('.filter__list').toggleClass('visible');
+    $('.filter-title').toggleClass('rotate');
+})
+
+$('.latest-products__title').click(() => {
+    $('.latest-products__list').toggleClass('visible');
+    $('.latest-products__title').toggleClass('rotate');
+})
+
+
  
 const btnTop = $('.scroll-top');
 
