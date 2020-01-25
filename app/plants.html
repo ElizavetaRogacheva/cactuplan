@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Plants</title>
+</head>
+<body>
+    <div class="main-container">
+        <header class="main-header">
+            <div class="main-header__container">
+                <div class="main-header__top">
+                    <div class="main-logo">
+                        <a href="./index.html" class="main-logo__link">
+                            <img src="https://codezeel.com/opencart/OPC02/OPC020044/image/catalog/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="main-header__bottom">
+                    <button class="main-nav__btn">menu</button>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a href="./index.html" class="main-nav__link">Home</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link main-nav__link--active main-nav__accordion-btn main-nav-collapse" id="level-1">Plants</a>
+                                <ul class="main-nav-submenu main-nav-submenu--big">
+                                    <li class="main-nav-submenu__item">
+                                        <a href="#" class="main-nav-submenu__link main-nav__accordion-btn" id="level-2">Tables</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Stools</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Study Table</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Coffe Table</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Writing Desk</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-nav-submenu__item">
+                                        <a href="#" class="main-nav-submenu__link main-nav__accordion-btn" id="level-2">Sofas</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Armchairs</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Poofs</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Lounge Chairs</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Day Beds</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-nav-submenu__item">
+                                        <a href="#" class="main-nav-submenu__link main-nav__accordion-btn" id="level-2">Dining</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Bar Stools</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Dining Table</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Benches</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">WDining Chairs</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__item"><a href="#" class="main-nav__link">Autotroph</a></li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link main-nav__accordion-btn main-nav-collapse" id="level-1">Shamrock</a>
+                                <ul class="main-nav-submenu">
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Vascular Plant</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Fertilizer</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Crenate Leaf</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Emergents</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__item main-nav__item--desktop">
+                                <a href="#" class="main-nav__link main-nav-collapse">More</a>
+                                <ul class="main-nav-submenu main-nav-submenu--last">
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Cactus</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Clover</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Blogs</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link">Cactus</a></li>
+                            <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link">Clover</a></li>
+                            <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link">Blogs</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="main-header__wrapper">
+                        <div class="main-header__search">
+                            <button class="search__btn">Search</button>
+                            <div class="search-container">
+                                <form action="#" class="search-form">
+                                    <input type="text" class="search-form__input" placeholder="Search Producs Here">
+                                    <button class="search-form__btn" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="main-header__cart">
+                            <button class="cart__btn">Сart</button>
+                            <span class="cart__counter">0</span>
+                        </div>
+                        <div class="main-header__account">
+                            <button class="account__btn">Развернуть</button>
+                            <div class="account-container">
+                                <div class="account__menu">
+                                    <ul class="account-menu__list">
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Register</a></li>
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Login</a></li>
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Wish List <span>(0)</span></a></li>
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Shopping Cart</a></li>
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Checkout</a></li>
+                                    </ul>
+                                </div>
+                                <div class="account__language-menu">
+                                    <div class="language__title">Language <span class="language-current">English</span></div>
+                                    <ul class="language-menu__list">
+                                        <li class="language-menu__item"><button class="language-menu__btn language-menu__btn--english">english</button></li>
+                                        <li class="language-menu__item"><button class="language-menu__btn language-menu__btn--arabic">arabic</button></li>
+                                    </ul>
+                                </div>
+                                <div class="account__currency-menu">
+                                    <div class="currency__title">currency<span class="currency-current">$</span></div>
+                                    <ul class="currency-menu__list">
+                                        <li class="currency-menu__item"><button class="currency-menu__btn">€</button></li>
+                                        <li class="currency-menu__item"><button class="currency-menu__btn">£</button></li>
+                                        <li class="currency-menu__item"><button class="currency-menu__btn">$</button></li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </header>
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="./index.html" class="breadcrumbs__link"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Plants</a></li>
+            </ul>
+        </div>
+        <section class="products-section">
+            <aside class="products-aside">
+                <div class="categories">
+                    <div class="categories__title aside-title">categories</div>
+                    <ul class="categories__list">
+                        <li class="categories__item">
+                            <a href="" class="categories__link">Plants</a>
+                            <ul class="aside-subcategiries">
+                                <li class="aside-subcategories__item"><a href="#" class="aside-subcategories__link">Tables</a></li>
+                                <li class="aside-subcategories__item"><a href="#" class="aside-subcategories__link">Sofas</a></li>
+                                <li class="aside-subcategories__item"><a href="#" class="aside-subcategories__link">Dining</a></li>
+                            </ul>
+                        </li>
+                        <li class="categories__item"><a href="" class="categories__link">Autotroph</a></li>
+                        <li class="categories__item"><a href="" class="categories__link">Shamrock</a></li>
+                        <li class="categories__item"><a href="" class="categories__link">Highboards</a></li>
+                        <li class="categories__item"><a href="" class="categories__link">Cactus</a></li>
+                        <li class="categories__item"><a href="" class="categories__link">Scissors</a></li>
+                        <li class="categories__item"><a href="" class="categories__link">Clover</a></li>
+                    </ul>
+                </div>
+                <div class="filter">
+                    <div class="filter-title aside-title">refine search</div>
+                    <ul class="filter__list">
+                        <li class="filter__item">
+                            <div class="filter__title">Color</div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-1"><label for="check-1">Green</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-2"><label for="check-2">Red</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-3"><label for="check-3">Yellow</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-4"><label for="check-4">Blue</label>
+                            </div>
+                        </li>
+                        <li class="filter__item">
+                            <div class="filter__title">Size</div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-5"><label for="check-5">Small</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-6"><label for="check-6">Medium</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-7"><label for="check-7">Large</label>
+                            </div>
+                        </li>
+                        <li class="filter__item">
+                            <div class="filter__title">Weight</div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-8"><label for="check-8">5</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-9"><label for="check-9">10</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="check-10"><label for="check-10">15</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="filter__btn">refine search</button>
+                </div>
+                <div class="advertising">
+                    <a href="#" class="advertising-block__link">
+                        <img src="./img/left-banner-1-278x320.jpg" alt="">
+                    </a>
+                </div>
+                <div class="latest-products">
+                    <div class="latest-products__title aside-title">latest</div>
+                    <ul class="latest-products__list">
+                        <li class="latest-products__item">
+                            <div class="latest-product-card">
+                                <a href="#" class="featured-product-card__link">
+                                    <img src="./img/05-360x302.jpg" alt="Aliquam Quaerat">
+                                </a>
+                                <div class="product-block-content">
+                                    <h4 class="product-block__title latest-product-title">
+                                        <a href="#" class="latest-product-link">Consectetur Hampden</a>
+                                    </h4>
+                                    <p class="price latest-product-price">$110.00 <s>$119.60</s></p>
+                                    <button class="latest-products__btn">add to cart</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-products__item">
+                            <div class="latest-product-card">
+                                <a href="#" class="featured-product-card__link">
+                                    <img src="./img/03-360x302.jpg" alt="Aliquam Quaerat">
+                                </a>
+                                <div class="product-block-content">
+                                    <h4 class="product-block__title latest-product-title">
+                                        <a href="#" class="latest-product-link">Aliquam Quaerat</a>
+                                    </h4>
+                                    <p class="price latest-product-price">$108.80</p>
+                                    <button class="latest-products__btn">add to cart</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-products__item">
+                            <div class="latest-product-card">
+                                <a href="#" class="featured-product-card__link">
+                                    <img src="./img/02-360x302.jpg" alt="Aliquam Quaerat">
+                                </a>
+                                <div class="product-block-content">
+                                    <h4 class="product-block__title latest-product-title">
+                                        <a href="#" class="latest-product-link">Accusantium Doloremque</a>
+                                    </h4>
+                                    <p class="price latest-product-price">$104.00</p>
+                                    <button class="latest-products__btn">add to cart</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="products-category-content">
+                <h1 class="products-category-content__title">plants</h1>
+                <div class="products-category-content__desc">
+                    <img src="./img/category-banner-892x200.jpg" alt="" class="products-category-content__img">
+                    <p class="products-category-content__text">Example of category description text</p>
+                </div>
+                <div class="subcategories">
+                    <div class="subcategories__title">refine search</div>
+                    <ul class="subcategories__list">
+                        <li class="subcategories__item"><a href="#" class="subcategories__link">Tables</a></li>
+                        <li class="subcategories__item"><a href="#" class="subcategories__link">Sofas</a></li>
+                        <li class="subcategories__item"><a href="#" class="subcategories__link">Dining</a></li>
+                    </ul>
+                </div>
+                <div class="filterboard">
+                    <div class="filterboard__left">
+                        <button class="show-grid show-grid--active">grid</button>
+                        <button class="show-list">list</button>
+                        <div class="product-compare">
+                            <a href="#" class="product-compare__link">Product Compare <span>(0)</span></a>
+                        </div>
+                    </div>
+                    <div class="filterboard__right">
+                        <div class="sort-by">
+                            <label for="sort-input" class="sort-by__label">Sort by:</label>
+                            <select name="sort-by" id="sort-input" class="select sort-by__select">
+                                <option value="" selected="selected" class="sort-by__option">Default</option>
+                                <option value="" class="sort-by__option">Name (A - Z)</option>
+                                <option value="" class="sort-by__option">Name (Z - A)</option>
+                                <option value="" class="sort-by__option">Price (Low > High)</option>
+                                <option value="" class="sort-by__option">Price (High > Low)</option>
+                                <option value="" class="sort-by__option">Rating (Highest)</option>
+                                <option value="" class="sort-by__option">Rating (Lowest)</option>
+                                <option value="" class="sort-by__option">Model (A - Z)</option>
+                                <option value="" class="sort-by__option">Model (Z - A)</option>
+                            </select>
+                        </div>
+                        <div class="sort-show">
+                            <label for="sort-show-input">Show:</label>
+                            <select name="sort-show" id="sort-show-input" class="select sort-show__select">
+                                <option value="" selected="selected" class="sort-show__option">12</option>
+                                <option value="" class="sort-show__option">25</option>
+                                <option value="" class="sort-show__option">50</option>
+                                <option value="" class="sort-show__option">75</option>
+                                <option value="" class="sort-show__option">100</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-block">
+                    <ul class="products-block__list">
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/01-360x302.jpg" alt="Accusantium Doloremque" class="product-block__img">
+                                    <img src="./img/02-360x302.jpg" alt="Accusantium Doloremque" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Accusantium Doloremque</a>
+                                    </h4>
+                                    <p class="price">$104.00</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/02-360x302.jpg" alt="Aliquam Quaerat" class="product-block__img">
+                                    <img src="./img/03-360x302.jpg" alt="Aliquam Quaerat" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Aliquam Quaerat</a>
+                                    </h4>
+                                    <p class="price">$108.80</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <div class="sale-sticker">sale</div>
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/03-360x302.jpg" alt="Commodi Consequatur" class="product-block__img">
+                                    <img src="./img/04-360x302.jpg" alt="Commodi Consequatur" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Commodi Consequatur</a>
+                                    </h4>
+                                    <p class="price">$134.00 <s>$136.40</s></p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <div class="sale-sticker">sale</div>
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/04-360x302.jpg" alt="Consectetur Hampden" class="product-block__img">
+                                    <img src="./img/05-360x302.jpg" alt="Consectetur Hampden" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Consectetur Hampden</a>
+                                    </h4>
+                                    <p class="price">$110.00 <s>$119.60</s></p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/05-360x302.jpg" alt="Exercitat Virginia" class="product-block__img">
+                                    <img src="./img/06-360x302.jpg" alt="Exercitat Virginia" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Exercitat Virginia</a>
+                                    </h4>
+                                    <p class="price">$116.00</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/06-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/14-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/14-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/14-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/14-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/14-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/14-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/14-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products-block__item">
+                            <div class="product-block">
+                                <a href="#" class="product-block__link">
+                                    <img src="./img/14-360x302.jpg" alt="Laborum Eveniet" class="product-block__img">
+                                    <img src="./img/11-360x302.jpg" alt="Laborum Eveniet" class="product-block__img product-block__img--hover">
+                                </a>
+                                <div class="product-block-content">
+                                    <ul class="rating-block">
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                        <li class="rating-block__item rating-block__item--empty"></li>
+                                    </ul>
+                                    <h4 class="product-block__title">
+                                        <a href="#">Laborum Eveniet</a>
+                                    </h4>
+                                    <p class="price">$97.99</p>
+                                    <ul class="product-options">
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--wishlist"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--view"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--compare"></button>
+                                        </li>
+                                        <li class="product-options__item">
+                                            <button class="product-options__btn product-options__btn--cart"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination-container">
+                        <div class="pagination-text">Showing 1 to 12 of 14 (2 Pages)</div>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item"><a href="#" class="pagination__link pagination__link--active">1</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">></a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__link">>|</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer plant-footer">
+            <div class="main-footer-container">
+                <div class="main-footer-top">
+                    <div class="main-footer__block contacts">
+                        <div class="main-footer__block-title" id="contact">Contact</div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">Cactuplan - Plant Store & United States</li>
+                            <li class="contacts__item">000-000-0000</li>
+                            <li class="contacts__item">123456</li>
+                            <li class="contacts__item">sales@yourcompany.com</li>
+                        </ul>
+                    </div>
+                    <div class="main-footer__block footer-info">
+                        <div class="main-footer__block-title" id="info">Information</div>
+                        <ul class="footer-info__list">
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">About Us</a></li>
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">Delivery Information</a></li>
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">Privacy Policy</a></li>
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">Terms & Conditions</a></li>
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">Site Map</a></li>
+                        </ul>
+                    </div>     
+                    <div class="main-footer__block footer-newsletter">
+                        <div class="main-footer__block-title main-footer__block-title--not-arrow">Newsletter</div>
+                        <div class="newsletter__list">
+                            <p class="footer-newsletter__text">Join us for get latest updates</p>
+                            <form action="" class="footer-newsletter__form">
+                                <input type="text" class="footer-newsletter__input" placeholder="Enter Your Email Address">
+                                <button class="footer-newsletter__btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>           
+                </div>
+                <div class="main-footer__socials">
+                    <ul class="socials__list">
+                        <li class="socials__item"><a href="#" class="social__link social__link--fb"></a></li>
+                        <li class="socials__item"><a href="#" class="social__link social__link--tw"></a></li>
+                        <li class="socials__item"><a href="#" class="social__link social__link--rss"></a></li>
+                        <li class="socials__item"><a href="#" class="social__link social__link--google"></a></li>
+                        <li class="socials__item"><a href="#" class="social__link social__link--ig"></a></li>
+                    </ul>
+                </div>
+                <div class="main-footer-bottom">
+                    <div class="copyright">Powered By OpenCart Cactuplan - Plant Store © 2020
+                    </div>
+                    <div class="main-footer-payment">
+                        <ul class="payment__list">
+                            <li class="payment__item"><img src="./img/visa.png" alt=""></li>
+                            <li class="payment__item"><img src="./img/discover.png" alt=""></li>
+                            <li class="payment__item"><img src="./img/american_express.png" alt=""></li>
+                            <li class="payment__item"><img src="./img/google_wallet.png" alt=""></li>
+                            <li class="payment__item"><img src="./img/paypal.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="scroll-top"></a>
+    </div>
+    <script src="./js/hidden-blocks.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+</html>
