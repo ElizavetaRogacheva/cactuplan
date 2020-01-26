@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <title>Product-Name</title>
+</head>
+<body>
+    <div class="main-container">
+        <header class="main-header">
+            <div class="main-header__container">
+                <div class="main-header__top">
+                    <div class="main-logo">
+                        <a href="#" class="main-logo__link">
+                            <img src="https://codezeel.com/opencart/OPC02/OPC020044/image/catalog/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="main-header__bottom">
+                    <button class="main-nav__btn">menu</button>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link">Home</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="./plants.html" class="main-nav__link main-nav__accordion-btn main-nav-collapse" id="level-1">Plants</a>
+                                <ul class="main-nav-submenu main-nav-submenu--big">
+                                    <li class="main-nav-submenu__item">
+                                        <a href="#" class="main-nav-submenu__link main-nav__accordion-btn" id="level-2">Tables</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Stools</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Study Table</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Coffe Table</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Writing Desk</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-nav-submenu__item">
+                                        <a href="#" class="main-nav-submenu__link main-nav__accordion-btn" id="level-2">Sofas</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Armchairs</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Poofs</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Lounge Chairs</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Day Beds</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-nav-submenu__item">
+                                        <a href="#" class="main-nav-submenu__link main-nav__accordion-btn" id="level-2">Dining</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Bar Stools</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Dining Table</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Benches</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">WDining Chairs</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__item"><a href="#" class="main-nav__link">Autotroph</a></li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link main-nav__accordion-btn main-nav-collapse" id="level-1">Shamrock</a>
+                                <ul class="main-nav-submenu">
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Vascular Plant</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Fertilizer</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Crenate Leaf</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Emergents</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__item main-nav__item--desktop">
+                                <a href="#" class="main-nav__link main-nav-collapse">More</a>
+                                <ul class="main-nav-submenu main-nav-submenu--last">
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Cactus</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Clover</a></li>
+                                    <li class="main-nav-submenu__item"><a href="#" class="main-nav-submenu__link">Blogs</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link">Cactus</a></li>
+                            <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link">Clover</a></li>
+                            <li class="main-nav__item main-nav__item--mobile"><a href="#" class="main-nav__link">Blogs</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="main-header__wrapper">
+                        <div class="main-header__search">
+                            <button class="search__btn">Search</button>
+                            <div class="search-container">
+                                <form action="#" class="search-form">
+                                    <input type="text" class="search-form__input" placeholder="Search Producs Here">
+                                    <button class="search-form__btn" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="main-header__cart">
+                            <button class="cart__btn">Сart</button>
+                            <span class="cart__counter">0</span>
+                        </div>
+                        <div class="main-header__account">
+                            <button class="account__btn">Развернуть</button>
+                            <div class="account-container">
+                                <div class="account__menu">
+                                    <ul class="account-menu__list">
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Register</a></li>
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Login</a></li>
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Wish List <span>(0)</span></a></li>
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Shopping Cart</a></li>
+                                        <li class="account-menu__item"><a href="#" class="account-menu__link">Checkout</a></li>
+                                    </ul>
+                                </div>
+                                <div class="account__language-menu">
+                                    <div class="language__title">Language <span class="language-current">English</span></div>
+                                    <ul class="language-menu__list">
+                                        <li class="language-menu__item"><button class="language-menu__btn language-menu__btn--english">english</button></li>
+                                        <li class="language-menu__item"><button class="language-menu__btn language-menu__btn--arabic">arabic</button></li>
+                                    </ul>
+                                </div>
+                                <div class="account__currency-menu">
+                                    <div class="currency__title">currency<span class="currency-current">$</span></div>
+                                    <ul class="currency-menu__list">
+                                        <li class="currency-menu__item"><button class="currency-menu__btn">€</button></li>
+                                        <li class="currency-menu__item"><button class="currency-menu__btn">£</button></li>
+                                        <li class="currency-menu__item"><button class="currency-menu__btn">$</button></li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </header>
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="./index.html" class="breadcrumbs__link"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li class="breadcrumbs__item"><a href="./plants.html" class="breadcrumbs__link">Plants</a></li>
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Accusantium Doloremque</a></li>
+            </ul>
+        </div>
+        <section class="product-section">
+            <div class="product-container">
+                <div class="product-container__left">
+                    <div class="product-gallery">
+                        <div class="full-product-picture">
+                            <img src="./img/01-360x302.jpg" alt="" class="full-product-picture__img">
+                        </div>
+                        <div class="product-gallery-slider">
+                            <ul class="product-gallery-slider__list">
+                                <li class="product-gallery-slider__item">
+                                    <a href="#" class="product-gallery-slider__link">
+                                        <img src="./img/02-360x302.jpg" alt="" class="product-gallery-slider__img">
+                                    </a>
+                                </li>
+                                <li class="product-gallery-slider__item">
+                                    <a href="#" class="product-gallery-slider__link">
+                                        <img src="./img/03-360x302.jpg" alt="" class="product-gallery-slider__img">
+                                    </a>
+                                </li>
+                                <li class="product-gallery-slider__item">
+                                    <a href="#" class="product-gallery-slider__link">
+                                        <img src="./img/04-360x302.jpg" alt="" class="product-gallery-slider__img">
+                                    </a>
+                                </li>
+                                <li class="product-gallery-slider__item">
+                                    <a href="#" class="product-gallery-slider__link">
+                                        <img src="./img/05-360x302.jpg" alt="" class="product-gallery-slider__img">
+                                    </a>
+                                </li>
+                                <li class="product-gallery-slider__item">
+                                    <a href="#" class="product-gallery-slider__link">
+                                        <img src="./img/06-360x302.jpg" alt="" class="product-gallery-slider__img">
+                                    </a>
+                                </li>
+                                <li class="product-gallery-slider__item">
+                                    <a href="#" class="product-gallery-slider__link">
+                                        <img src="./img/08-954x800.jpg" alt="" class="product-gallery-slider__img">
+                                    </a>
+                                </li>
+                                <li class="product-gallery-slider__item">
+                                    <a href="#" class="product-gallery-slider__link">
+                                        <img src="./img/10-954x800.jpg" alt="" class="product-gallery-slider__img">
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="product-gallery-slider__btn product-gallery-slider__btn--left slider__btn"></button>
+                            <button class="product-gallery-slider__btn product-gallery-slider__btn--right slider__btn"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container__right">
+                    <h3 class="product__title">Accusantium Doloremque</h3>
+                    <div class="product-container__rating">
+                        <ul class="rating-block">
+                            <li class="rating-block__item"></li>
+                            <li class="rating-block__item"></li>
+                            <li class="rating-block__item"></li>
+                            <li class="rating-block__item"></li>
+                            <li class="rating-block__item"></li>
+                        </ul>
+                        <a href="#" class="review-count"><span>1</span>reviews</a>
+                        <a href="#" class="write-rewiew-link">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            Write a review
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <ul class="product-info__list">
+                            <li class="product-info__item">
+                                <span>Brand:</span>
+                                <a href="#" class="product-info__link">Hewlett-Packard</a>
+                            </li>
+                            <li class="product-info__item">
+                                <span>Product Code:</span>
+                                Product 21
+                            </li>
+                            <li class="product-info__item">
+                                <span>Reward Points:</span>
+                                300
+                            </li>
+                            <li class="product-info__item">
+                                <span>Availability:</span>
+                                In Stock
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="options">
+                        <h3 class="options__title">Available Options</h3>
+                        <div class="delivery-date">
+                            <label for="deliverydate" class="delivery-label"></label>
+                            <div class="delivery-date__input-wrapper">
+                                <input type="text" class="delivery-input" id="deliverydate" value="2012-05-30">
+                                <button class="delivery-date__btn">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-price-block">
+                        <div class="product-price">$104.00</div>
+                        <div class="product-tax">Ex Tax: $85.00</div>
+                        <div class="reward-points">Price in reward points: <span>400</span></div>
+                    </div>
+                    <div class="product-qty-group">
+                        <label for="qty-input" class="qty-label">Qty</label>
+                        <input type="text" class="qty-input" id="qty-input" value="1">
+                        <button class="add-to-cart-btn">add to cart</button>
+                        <button class="product-qty-group__btn wishlist-btn">add to wishlist</button>
+                        <button class="product-qty-group__btn compare-btn">add to compare</button>
+                    </div>
+                    <div class="toolbox">
+                        <ul class="toolbox__list">
+                            <li class="toolbox__item"></li>
+                            <li class="toolbox__item"></li>
+                            <li class="toolbox__item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer plant-footer">
+            <div class="main-footer-container">
+                <div class="main-footer-top">
+                    <div class="main-footer__block contacts">
+                        <div class="main-footer__block-title" id="contact">Contact</div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">Cactuplan - Plant Store & United States</li>
+                            <li class="contacts__item">000-000-0000</li>
+                            <li class="contacts__item">123456</li>
+                            <li class="contacts__item">sales@yourcompany.com</li>
+                        </ul>
+                    </div>
+                    <div class="main-footer__block footer-info">
+                        <div class="main-footer__block-title" id="info">Information</div>
+                        <ul class="footer-info__list">
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">About Us</a></li>
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">Delivery Information</a></li>
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">Privacy Policy</a></li>
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">Terms & Conditions</a></li>
+                            <li class="footer-info__item"><a href="#" class="footer-info__link">Site Map</a></li>
+                        </ul>
+                    </div>     
+                    <div class="main-footer__block footer-newsletter">
+                        <div class="main-footer__block-title main-footer__block-title--not-arrow">Newsletter</div>
+                        <div class="newsletter__list">
+                            <p class="footer-newsletter__text">Join us for get latest updates</p>
+                            <form action="" class="footer-newsletter__form">
+                                <input type="text" class="footer-newsletter__input" placeholder="Enter Your Email Address">
+                                <button class="footer-newsletter__btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>           
+                </div>
+                <div class="main-footer__socials">
+                    <ul class="socials__list">
+                        <li class="socials__item"><a href="#" class="social__link social__link--fb"></a></li>
+                        <li class="socials__item"><a href="#" class="social__link social__link--tw"></a></li>
+                        <li class="socials__item"><a href="#" class="social__link social__link--rss"></a></li>
+                        <li class="socials__item"><a href="#" class="social__link social__link--google"></a></li>
+                        <li class="socials__item"><a href="#" class="social__link social__link--ig"></a></li>
+                    </ul>
+                </div>
+                <div class="main-footer-bottom">
+                    <div class="copyright">Powered By OpenCart Cactuplan - Plant Store © 2020
+                    </div>
+                    <div class="main-footer-payment">
+                        <ul class="payment__list">
+                            <li class="payment__item"><img src="./img/visa.png" alt=""></li>
+                            <li class="payment__item"><img src="./img/discover.png" alt=""></li>
+                            <li class="payment__item"><img src="./img/american_express.png" alt=""></li>
+                            <li class="payment__item"><img src="./img/google_wallet.png" alt=""></li>
+                            <li class="payment__item"><img src="./img/paypal.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

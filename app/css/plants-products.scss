@@ -442,18 +442,18 @@
 }
 
 .products-block__item {
-    max-width: 30%;
+    width: 30%;
     padding: 10px;
     background-color: #fff;
     margin: 15px;
     box-sizing: border-box;
 
     @include tablets {
-        max-width: 45%;
+        width: 45%;
     }
 
     @include phones {
-        max-width: 100%;
+        width: 100%;
     }
 
     &:hover {
