@@ -1,3 +1,268 @@
 .product-section {
-    
+    background-color: $bg-gray;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1230px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.product-container__left {
+    width: 42%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.full-product-picture {
+    width: 100%;
+}
+
+.full-product-picture__link {
+    display: block;
+    width: 100%;
+}
+
+.full-product-picture__img {
+    width: 100%;
+    height: auto;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+}
+
+.product-gallery-slider {
+    position: relative;
+}
+
+.product-gallery-slider__list {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+.product-gallery-slider__item {
+    width: 20%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.product-gallery-slider__link {
+    width: 100%;
+}
+
+.product-gallery-slider__img {
+    width: 100%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.product-gallery-slider__btn {
+    position: absolute;
+    z-index: 10;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-16px);
+
+    &--left {
+        left: 0;
+    }
+
+    &--right {
+        right: 0;
+    }
+}
+
+.product-container__right {
+    width: 58%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.product__title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 0 5px;
+    color: #000;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.product-container__rating {
+    width: 100%;
+    display: flex;
+    margin: 10px 0 15px;
+
+    .rating-block {
+        padding: 0;
+        margin-right: 20px;
+    }
+}
+
+.review-count {
+    color: #555555;
+    margin-right: 20px;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+.write-rewiew-link {
+    color: #555555;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+.product-info {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+}
+
+.product-info__item {
+    padding: 4px 0;
+    color: $font-gray;
+
+    span {
+        color: #000;
+        font-weight: 500;
+    }
+}
+
+.product-info__link {
+    color: $font-gray;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+.options {
+    padding-top: 5px;
+}
+
+.options__title {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.delivery-date {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.delivery-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.delivery-date__input-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+.delivery-input {
+    width: 100%;
+    padding: 6px 85px 6px 12px;
+    box-sizing: border-box;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid $border-color;
+}
+
+.delivery-date__btn {
+    padding: 7px 30px 7px;
+    line-height: 22px;
+    background-color: $green;
+    color: #fff;
+    border: none;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
+.product-price-block {
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-weight: 600;
+    color: #000;
+    font-size: 24px;
+}
+
+.product-tax,
+.reward-points {
+    padding: 2px 0;
+    font-size: 11px;
+    line-height: 26px;
+}
+
+.product-qty-group {
+    margin: 20px 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.qty-label {
+    color: #000;
+    margin-right: 10px;
+}
+
+.qty-input {
+    height: 30px;
+    text-align: center;
+    padding: 6px 12px;
+    width: 55px;
+    margin-right: 10px;
+}
+
+.add-to-cart-btn {
+    padding: 15px 40px;
+    color: #fff;
+    border: none;
+    background-color: $green;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
+.product-qty-group__btn {
+    color: $green;
+    border: 1px solid $green;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 12px 15px;
+    margin-right: 10px;
+
+    &:hover {
+        color: #afafaf;
+        border-color: #afafaf;
+    }
+}
+
+.toolbox__list {
+    display: flex;
 }

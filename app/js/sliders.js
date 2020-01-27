@@ -92,3 +92,28 @@ $('.testimonials__list').slick(
 );
 
 
+$('.product-gallery-slider__list').slick({
+  infinite: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: $('.product-gallery-slider__btn--left'),
+  nextArrow: $('.product-gallery-slider__btn--right'),
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]  
+});
+
+

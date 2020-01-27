@@ -1,6 +1,8 @@
 $green: #6ea820;
 $gray: #878787;
 $bg-gray: #f7f7f7;
+$font-gray: #555555;
+$border-color: #e0e0e0;
 
 
 @import "./media.scss";
@@ -17,3 +19,4 @@ $bg-gray: #f7f7f7;
 @import "./testimonials.scss";
 @import "./footer.scss";
 @import "./plants-products.scss";
+@import "./product-card.scss";
