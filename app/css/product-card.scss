@@ -8,12 +8,21 @@
     width: 1230px;
     max-width: 100%;
     margin: 0 auto;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .product-container__left {
     width: 42%;
     padding: 0 15px;
     box-sizing: border-box;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .full-product-picture {
@@ -42,6 +51,10 @@
     overflow: hidden;
     justify-content: space-around;
     padding: 0 30px;
+
+    @include phones {
+        padding: 0 60px;
+    }
 }
 
 .product-gallery-slider__item {
@@ -80,6 +93,10 @@
     width: 58%;
     padding: 0 15px;
     box-sizing: border-box;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .product__title {
@@ -97,15 +114,29 @@
     display: flex;
     margin: 10px 0 15px;
 
+    @include phones {
+        flex-direction: column;
+    }
+
     .rating-block {
         padding: 0;
         margin-right: 20px;
+
+        @include phones {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
     }
 }
 
 .review-count {
     color: #555555;
     margin-right: 20px;
+
+    @include phones {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
     &:hover {
         color: $green;
@@ -221,6 +252,10 @@
     margin: 20px 0 30px;
     display: flex;
     align-items: center;
+
+    @include phones {
+        flex-wrap: wrap;
+    }
 }
 
 .qty-label {
@@ -234,6 +269,10 @@
     padding: 6px 12px;
     width: 55px;
     margin-right: 10px;
+
+    @include phones {
+        margin-bottom: 10px;
+    }
 }
 
 .add-to-cart-btn {
@@ -243,6 +282,10 @@
     background-color: $green;
     text-transform: uppercase;
     margin-right: 10px;
+
+    @include phones {
+        margin-bottom: 10px;
+    }
 
     &:hover {
         background-color: #000;
@@ -256,6 +299,11 @@
     font-size: 15px;
     padding: 12px 15px;
     margin-right: 10px;
+
+    @include phones {
+        margin-bottom: 10px;
+    }
+
 
     &:hover {
         color: #afafaf;
@@ -273,10 +321,20 @@
     max-width: 100%;
     margin: 0 auto;
     margin-bottom: 40px;
+
+    @include tablets {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
 }
 
 .product-tabs-info__nav-list {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .product-tabs-info__nav-item {
@@ -461,6 +519,12 @@
     margin: 0 auto;
     position: relative;
     margin-bottom: 20px;
+
+    @include tablets {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
 }
 
 .related-products__title {
@@ -483,6 +547,10 @@
     width: 20%;
     padding-right: 10px; 
     margin-right: 20px; 
+
+    @include tablets {
+        width: 45%;
+    }
 }
 
 .related-products__btn {
@@ -494,10 +562,18 @@
 
     &--left {
         left: -10px;
+
+        @include tablets {
+            left: 0;
+        }
     }
 
     &--right {
         right: -10px;
+
+        @include tablets {
+            right: 0;
+        }
     }
 }
 
@@ -506,6 +582,12 @@
     max-width: 100%;
     margin: 0 auto;
     padding-bottom: 40px;
+
+    @include tablets {
+        width: 100%;
+        padding: 0 30px 40px;
+        box-sizing: border-box;
+    }
 }
 
 
