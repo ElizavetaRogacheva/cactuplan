@@ -266,3 +266,253 @@
 .toolbox__list {
     display: flex;
 }
+
+
+.product-tabs-info {
+    width: 1230px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.product-tabs-info__nav-list {
+    display: flex;
+}
+
+.product-tabs-info__nav-item {
+    margin-right: 5px;
+}
+
+.product-tabs-info__nav-link {
+    padding: 10px 25px;
+    color: #666;
+    display: block;
+    text-transform: uppercase;
+    font: 500 14px/22px;
+    text-align: center;
+    background: transparent;
+    border: 0;
+    letter-spacing: 0.5px;
+
+    &:hover,
+    &--active {
+        background-color: #fff;
+        color: $green;
+    }
+}
+
+.products-tabs-info__list {
+    padding: 25px;
+    background-color: #fff;
+}
+
+.products-tabs-info__item {
+    display: none;
+}
+
+.products-tabs-info__table {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    tr {
+        display:  table-row;
+        width: 100%;
+        border: 1px solid #e5e5e5;
+    }
+
+    td {
+        display: table-cell;
+        padding: 10px 15px;
+        border: 1px solid #e5e5e5;
+    }
+}
+
+.table-head {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: #262626;
+    font-weight: 600;
+    width: 100%;
+}
+
+.review-table {
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+
+    tr {
+        border: 1px solid #e5e5e5;
+    }
+
+    td {
+        display: table-cell;
+        padding: 10px 15px;
+        border: 1px solid #e5e5e5;
+    }
+}
+
+.review-alert {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.fa-check-circle {
+    color: #3c763d;
+}
+
+.review-alert-error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;    
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.fa-exclamation-circle {
+    color: #a94442;   
+}
+
+
+.write-review__title {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    color: #000;
+}
+
+.write-review__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.write-review__label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #262626;
+    padding-top: 7px;
+}
+
+.write-rewiew__input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #222222;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.write-review__textarea {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #222222;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.review-help {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+
+    span {
+        color: #a94442;
+    }
+}
+
+.rating-scale {
+    margin-bottom: 20px;
+}
+
+.write-review__btn {
+    padding: 8px 30px 8px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background-color: $green;
+    border: none;
+    display: block;
+    max-width: 200px;
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
+.active-item {
+    display: block;
+}
+
+.related-products {
+    width: 1230px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.related-products__title {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.related-products__list {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    .slick-slide {
+        padding: 0 15px;
+    }
+}
+
+.related-products__item {
+    width: 20%;
+    padding-right: 10px; 
+    margin-right: 20px; 
+}
+
+.related-products__btn {
+    opacity: 1;
+}
+
+.related-products__btn {
+    top: 50%;
+
+    &--left {
+        left: -10px;
+    }
+
+    &--right {
+        right: -10px;
+    }
+}
+
+.tags {
+    width: 1230px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+
+.tags__link {
+    color: #555555;
+
+    &:hover {
+        color: $green;
+    }
+}

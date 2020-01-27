@@ -116,4 +116,28 @@ $('.product-gallery-slider__list').slick({
     ]  
 });
 
+$('.related-products__list').slick({
+  infinite: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: $('.related-products__btn--left'),
+  nextArrow: $('.related-products__btn--right'),
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]  
+}); 
+
 
