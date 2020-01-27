@@ -124,17 +124,18 @@
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translateX(-180px);
+    transform: translateX(-48%);
     width: 90%;
 
     @include tablets {
-        width: 70%;
-        transform: translateX(-50%);
+        width: 90%;
+        left: 50%;
+        top: 80%;
+        transform: translateX(-48%);
     }
 
     @include phones {
         width: 100%;
-        top: 70%;
         left: 3px;
         transform: translateX(0);
     }
