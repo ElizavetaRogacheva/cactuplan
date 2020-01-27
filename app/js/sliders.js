@@ -1,4 +1,4 @@
-$('.promo-slider__list').slick(
+$('.js-promo-slider__list').slick(
     {   autoplay: true,
         autoplaySpeed: 3000,
         prevArrow: $('.promo-slider__btn--prev'),
@@ -7,7 +7,7 @@ $('.promo-slider__list').slick(
     }  
 );
 
-$('.featured-products-carousel').slick({
+$('.js-featured-products-carousel').slick({
     infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -24,7 +24,7 @@ $('.featured-products-carousel').slick({
       ]  
   });
 
-$('.special-slider__list').slick(
+$('.js-special-slider__list').slick(
   {   autoplay: false,
       autoplaySpeed: 3000,
       prevArrow: $('.special-slider__btn--left'),
@@ -33,7 +33,7 @@ $('.special-slider__list').slick(
     
 );
 
-$('.news-block__slider-list').slick({
+$('.js-news-block__slider-list').slick({
   infinite: false,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -57,7 +57,7 @@ $('.news-block__slider-list').slick({
     ]  
 });
 
-$('.partners__list').slick({
+$('.js-partners__list').slick({
   infinite: false,
   slidesToShow: 5,
   slidesToScroll: 1,
@@ -82,7 +82,7 @@ $('.partners__list').slick({
 });
 
 
-$('.testimonials__list').slick(
+$('.js-testimonials__list').slick(
   {   autoplay: true,
       autoplaySpeed: 3000,  
       prevArrow: $('.testimoneals-slider__btn--left'),
@@ -92,7 +92,7 @@ $('.testimonials__list').slick(
 );
 
 
-$('.product-gallery-slider__list').slick({
+$('.js-product-gallery-slider__list').slick({
   infinite: false,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -116,7 +116,7 @@ $('.product-gallery-slider__list').slick({
     ]  
 });
 
-$('.related-products__list').slick({
+$('.js-related-products__list').slick({
   infinite: false,
   slidesToShow: 4,
   slidesToScroll: 1,

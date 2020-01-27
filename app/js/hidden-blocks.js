@@ -1,43 +1,43 @@
-$('.main-nav__btn').click(() => {
-    $('.main-nav').toggleClass('main-nav-close');
+$('.js-main-nav__btn').click(() => {
+    $('.js-main-nav').toggleClass('main-nav-close');
 });
 
-$('.search__btn').click(() => {
-    $('.search-container').toggleClass('visible');
-})
+$('.js-search__btn').click(() => {
+    $('.js-search-container').toggleClass('visible');
+});
 
-$('.account__btn').click(() => {
-    $('.account-container').toggleClass('visible');
-})
+$('.js-account__btn').click(() => {
+    $('.js-account-container').toggleClass('visible');
+});
 
 $('#contact').click(() => {
-    $('.contacts__list').toggleClass('visible');
+    $('.js-contacts__list').toggleClass('visible');
     $('#contact').toggleClass('rotate');
-})
+});
 
 $('#info').click(() => {
-    $('.footer-info__list').toggleClass('visible');
+    $('.js-footer-info__list').toggleClass('visible');
     $('#info').toggleClass('rotate');
-})
+});
 
-$('.categories__title').click(() => {
-    $('.categories__list').toggleClass('visible');
-    $('.categories__title').toggleClass('rotate');
-})
+$('.js-categories__title').click(() => {
+    $('.js-categories__list').toggleClass('visible');
+    $('.js-categories__title').toggleClass('rotate');
+});
 
-$('.filter-title').click(() => {
-    $('.filter__list').toggleClass('visible');
-    $('.filter-title').toggleClass('rotate');
-})
+$('.js-filter-title').click(() => {
+    $('.js-filter__list').toggleClass('visible');
+    $('.js-filter-title').toggleClass('rotate');
+});
 
-$('.latest-products__title').click(() => {
-    $('.latest-products__list').toggleClass('visible');
-    $('.latest-products__title').toggleClass('rotate');
-})
+$('.js-latest-products__title').click(() => {
+    $('.js-latest-products__list').toggleClass('visible');
+    $('.js-latest-products__title').toggleClass('rotate');
+});
 
 
  
-const btnTop = $('.scroll-top');
+const btnTop = $('.js-scroll-top');
 
 $(window).scroll(() => {
 if ($(window).scrollTop() > 300) {

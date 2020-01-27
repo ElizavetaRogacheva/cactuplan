@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -21,14 +21,14 @@
             <div class="main-header__container">
                 <div class="main-header__top">
                     <div class="main-logo">
-                        <a href="#" class="main-logo__link">
+                        <a href="./index.html" class="main-logo__link">
                             <img src="https://codezeel.com/opencart/OPC02/OPC020044/image/catalog/logo.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="main-header__bottom">
-                    <button class="main-nav__btn">menu</button>
-                    <nav class="main-nav">
+                    <button class="main-nav__btn js-main-nav__btn">menu</button>
+                    <nav class="main-nav js-main-nav">
                         <ul class="main-nav__list">
                             <li class="main-nav__item">
                                 <a href="#" class="main-nav__link">Home</a>
@@ -91,8 +91,8 @@
                     </nav>
                     <div class="main-header__wrapper">
                         <div class="main-header__search">
-                            <button class="search__btn">Search</button>
-                            <div class="search-container">
+                            <button class="search__btn js-search__btn">Search</button>
+                            <div class="search-container js-search-container">
                                 <form action="#" class="search-form">
                                     <input type="text" class="search-form__input" placeholder="Search Producs Here">
                                     <button class="search-form__btn" type="submit">Search</button>
@@ -104,8 +104,8 @@
                             <span class="cart__counter">0</span>
                         </div>
                         <div class="main-header__account">
-                            <button class="account__btn">Развернуть</button>
-                            <div class="account-container">
+                            <button class="account__btn js-account__btn">Развернуть</button>
+                            <div class="account-container js-account-container">
                                 <div class="account__menu">
                                     <ul class="account-menu__list">
                                         <li class="account-menu__item"><a href="#" class="account-menu__link">Register</a></li>
@@ -153,7 +153,7 @@
                             </a>
                         </div>
                         <div class="product-gallery-slider">
-                            <ul class="product-gallery-slider__list">
+                            <ul class="product-gallery-slider__list js-product-gallery-slider__list">
                                 <li class="product-gallery-slider__item">
                                     <a href="#" class="product-gallery-slider__link">
                                         <img src="./img/02-360x302.jpg" alt="" class="product-gallery-slider__img">
@@ -387,7 +387,7 @@
             </div>
             <div class="related-products">
                 <h3 class="related-products__title italic-title">Related Products</h3>
-                <ul class="related-products__list">
+                <ul class="related-products__list js-related-products__list">
                     <li class="related-products__item">
                         <div class="product-block">
                             <a href="#" class="product-block__link">
@@ -692,7 +692,7 @@
                 <div class="main-footer-top">
                     <div class="main-footer__block contacts">
                         <div class="main-footer__block-title" id="contact">Contact</div>
-                        <ul class="contacts__list">
+                        <ul class="contacts__list js-contacts__list">
                             <li class="contacts__item">Cactuplan - Plant Store & United States</li>
                             <li class="contacts__item">000-000-0000</li>
                             <li class="contacts__item">123456</li>
@@ -701,7 +701,7 @@
                     </div>
                     <div class="main-footer__block footer-info">
                         <div class="main-footer__block-title" id="info">Information</div>
-                        <ul class="footer-info__list">
+                        <ul class="footer-info__list js-footer-info__list">
                             <li class="footer-info__item"><a href="#" class="footer-info__link">About Us</a></li>
                             <li class="footer-info__item"><a href="#" class="footer-info__link">Delivery Information</a></li>
                             <li class="footer-info__item"><a href="#" class="footer-info__link">Privacy Policy</a></li>
@@ -744,7 +744,7 @@
                 </div>
             </div>
         </footer>
-        <a href="#" class="scroll-top"></a>
+        <a href="#" class="scroll-top js-scroll-top"></a>
     </div>
     <script src="./js/hidden-blocks.js"></script>
     <script src="./js/accordion.js"></script>
