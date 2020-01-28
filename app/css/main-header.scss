@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: $gray;
-    font-size: 14px;
+    font-size: $font-normal;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.5px;
@@ -90,7 +90,7 @@ button {
         font-weight: 600;
         color: #000000;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: $font-normal;
         padding: 13px 0 13px 40px;
         background: url(../img/sprite.png) no-repeat scroll -3px -113px;
     }
@@ -344,7 +344,7 @@ button {
     width: 100%;
     background: #ffffff;
     padding: 12px 0px 10px 10px;
-    font-size: 13px;
+    font-size: $font-small;
     font-style: italic;
     text-transform: capitalize;
     border: 1px solid #e6e6e6;
@@ -390,7 +390,7 @@ button {
     color: #ffffff;
     border-radius: 20px;
     line-height: 13px;
-    font-size: 13px;
+    font-size: $font-small;
     padding:  1px 3px;
     top: -2px;
     right: 0;
@@ -447,7 +447,7 @@ button {
     color: #000000;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 13px;
+    font-size: $font-small;
     line-height: 13px;
     margin-bottom: 10px;
 }
@@ -475,7 +475,7 @@ button {
 .language-menu__btn {
     color: #000000;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: $font-small;
     line-height: 13px;
     border: 1px solid #eee;
     background-color: #fff;
@@ -530,3 +530,10 @@ button {
     display: block;
 }
 
+.invisible {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}

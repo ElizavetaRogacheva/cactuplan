@@ -1,42 +1,77 @@
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
+'use strict'
+
+function initializeTimer() {
+	var endDate = new Date(2020,1,28);
+ 
+	var currentDate = new Date();
+	var seconds = (endDate-currentDate) / 1000;
+	if (seconds > 0) {
+		var minutes = seconds/60; 
+		var hours = minutes/60;
+		var days = hours / 24;
+		minutes = (hours - Math.floor(hours)) * 60; 
+		days = Math.floor(days);
+		hours =  Math.floor(hours)- days * 24; 
+ 
+		seconds = Math.floor((minutes - Math.floor(minutes)) * 60); 
+		minutes = Math.floor(minutes); 
+ 
+		setTimePage(days, hours,minutes,seconds); 
+ 
+		function secOut() {
+		  if (seconds == 0) { 
+			  if (minutes == 0) { 
+				  if (hours == 0) { 
+				  	   if(days == 0){
+				  			showMessage(timerId); 
+				  	    }
+				  		else{
+				  			days--; 
+				  			hours = 24; 
+						    minutes = 59; 
+						    seconds = 59; 
+				  		}
+				  }
+				  else {
+					  hours--; 
+					  minutes = 59; 
+					  seconds = 59; 
+				  }
+			  }
+			  else {
+				  minutes--; 
+				  seconds = 59; 
+			  }
+		  }
+		  else {
+			  seconds--; 
+		  }
+		  setTimePage(days, hours,minutes,seconds); 
+		}
+		timerId = setInterval(secOut, 1000) 
+	}
+	else {
+		alert("Установленая дата уже прошла");
+	}
 }
 
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
+window.onload = function()
+{
+     initializeTimer();
 }
 
-var deadline="January 01 2018 00:00:00 GMT+0300"; 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
-initializeClock('countdown', deadline);
+function setTimePage(d,h,m,s) { 
+	var days = document.getElementById("days");
+	var hours = document.getElementById("hours"); 
+	var minutes = document.getElementById("minutes"); 
+	var seconds = document.getElementById("seconds"); 
+ 
+	days.innerHTML = d;
+	hours.innerHTML = h;
+	minutes.innerHTML = m;
+	seconds.innerHTML = s;
+ 
+}
+
+
+var endDate = new Date(2020,2,28);

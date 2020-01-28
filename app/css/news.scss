@@ -71,7 +71,7 @@
     font-weight: 600;
     text-transform: uppercase;
     line-height: 24px;
-    font-size: 14px;
+    font-size: $font-normal;
     margin-bottom: 0;
     letter-spacing: 0.2px;
     color:#000000;
@@ -111,7 +111,7 @@
 
     &::before {
         position: absolute;
-        font-size: 14px;
+        font-size: $font-normal;
         color: #ffffff;
         font-family: 'FontAwesome';
         top: 7px;
@@ -162,7 +162,7 @@
     display: none;
 	position: absolute; 
     left: 0;
-    width: calc(100% -40px);
+    width: calc(100% - 40px);
 	top: 0;
 	height: 100%;
     z-index: 10;

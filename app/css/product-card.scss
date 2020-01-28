@@ -161,11 +161,11 @@
 .product-info__item {
     padding: 4px 0;
     color: $font-gray;
+}
 
-    span {
-        color: #000;
-        font-weight: 500;
-    }
+.product-info-bold {
+    color: #000;
+    font-weight: 500;
 }
 
 .product-info__link {
@@ -195,7 +195,7 @@
 }
 
 .delivery-label {
-    font-size: 14px;
+    font-size: $font-normal;
     font-weight: 400;
     color: #262626;
 }
@@ -346,7 +346,7 @@
     color: #666;
     display: block;
     text-transform: uppercase;
-    font: 500 14px/22px;
+    font: 500 $font-normal/22px;
     text-align: center;
     background: transparent;
     border: 0;
@@ -451,7 +451,7 @@
 }
 
 .write-review__label {
-    font-size: 14px;
+    font-size: $font-normal;
     font-weight: 400;
     color: #262626;
     padding-top: 7px;
@@ -462,7 +462,7 @@
     width: 100%;
     height: 40px;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: $font-normal;
     color: #222222;
     background-color: #fff;
     border: 1px solid #e5e5e5;
@@ -472,7 +472,7 @@
 .write-review__textarea {
     width: 100%;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: $font-normal;
     color: #222222;
     background-color: #fff;
     border: 1px solid #e5e5e5;
@@ -496,7 +496,7 @@
 .write-review__btn {
     padding: 8px 30px 8px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: $font-small;
     letter-spacing: 0.5px;
     color: #fff;
     background-color: $green;

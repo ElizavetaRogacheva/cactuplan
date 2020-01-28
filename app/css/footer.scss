@@ -185,7 +185,7 @@
     width: 100%;
     border: 1px solid rgba(240,231,221,.2);
     background-color: #ffffff;
-    font-size: 13px;
+    font-size: $font-small;
     letter-spacing: .4px;
     color:#000000;
     font-weight: 300;
@@ -201,7 +201,7 @@
     color:#ffffff;
     background: #6ea820;
     right: 0;
-    font-size: 13px;
+    font-size: $font-small;
     border: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -239,7 +239,7 @@
         position: absolute;
         top: 2px;
         font-family: "FontAwesome";
-        font-size: 14px;
+        font-size: $font-normal;
         font-weight: 400;
         color:#666666;
     }

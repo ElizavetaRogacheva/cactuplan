@@ -95,7 +95,7 @@
     background: none;
     color: #000;
     font-weight: 500;
-    font-size: 13px;
+    font-size: $font-small;
     letter-spacing: 0;
     text-transform: uppercase;
     position: absolute;
@@ -165,7 +165,7 @@
 
 .special-content__title {
     color:#000000;
-    font-size: 13px;
+    font-size: $font-small;
     text-decoration: none;
     font-weight: 400;
     text-transform: capitalize;
